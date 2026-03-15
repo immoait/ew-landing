@@ -1,16 +1,16 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Bot, Clock, Zap, FileX } from "lucide-react";
+import { MessageCircle, Clock, Zap, Layers } from "lucide-react";
 import { AnimationWrapper } from "@/components/animation-wrapper";
 import { SpotlightCard } from "@/components/spotlight-card";
 import { Badge } from "@/components/ui/badge";
 
 const featureData = [
-  { key: "ai", icon: Bot, gradient: "from-primary to-primary-accent", span: "sm:col-span-2 md:col-span-2 md:row-span-2" },
+  { key: "ai", icon: MessageCircle, gradient: "from-primary to-primary-accent", span: "sm:col-span-2 md:col-span-2 md:row-span-2" },
   { key: "available", icon: Clock, gradient: "from-secondary to-secondary-light", span: "" },
   { key: "fast", icon: Zap, gradient: "from-primary-accent to-secondary", span: "" },
-  { key: "paperless", icon: FileX, gradient: "from-secondary-light to-primary", span: "sm:col-span-2 md:col-span-2" },
+  { key: "paperless", icon: Layers, gradient: "from-secondary-light to-primary", span: "sm:col-span-2 md:col-span-2" },
 ] as const;
 
 export function Features() {

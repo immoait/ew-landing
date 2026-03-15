@@ -6,33 +6,33 @@
     "startClaim": "Schaden melden"
   },
   "hero": {
-    "badge": "Die Zukunft der Schadensmeldung",
+    "badge": "Einfach für alle",
     "title": "Ihre Reise zählt.",
     "titleHighlight": "Wir machen es gut.",
-    "description": "Ihr Gepäck wurde beschädigt — das verstehen wir. Unser KI-Assistent kümmert sich um alles. Keine Formulare. Keine Warteschleife. Nur Ergebnisse.",
+    "description": "Beschädigtes Gepäck sollte nicht tagelange E-Mails und Warteschleifen bedeuten. Sagen Sie uns, was passiert ist — wir kümmern uns drum. Schnell, fair und unkompliziert.",
     "cta": "Schaden melden",
     "learnMore": "So funktioniert's"
   },
   "howItWorks": {
-    "badge": "Müheloser Prozess",
+    "badge": "In Minuten erledigt",
     "title": "Vom Schaden zur Lösung",
     "description": "Vier Schritte. Fünf Minuten. Mehr braucht es nicht.",
     "steps": {
       "report": {
         "title": "Erzählen",
-        "description": "Beschreiben Sie, was passiert ist — unsere KI versteht natürliche Sprache, keine Formulare nötig"
+        "description": "Sagen Sie uns, was passiert ist — in Ihren eigenen Worten, keine Formulare nötig."
       },
       "upload": {
         "title": "Zeigen",
-        "description": "Fotografieren Sie den Schaden und teilen Sie Ihre Flugdaten"
+        "description": "Teilen Sie ein Foto und Ihre Flugdaten — mehr brauchen wir nicht."
       },
       "review": {
-        "title": "Wir erledigen es",
-        "description": "Unsere KI prüft, bearbeitet und beschleunigt Ihren Antrag automatisch"
+        "title": "Wir kümmern uns",
+        "description": "Wir prüfen alles und beschleunigen Ihren Antrag."
       },
       "resolve": {
         "title": "Ergebnis erhalten",
-        "description": "Erhalten Sie Ihre Entscheidung — in der Regel innerhalb von 24 Stunden"
+        "description": "Sie erhalten Ihre Entscheidung — die meisten Passagiere hören innerhalb von 24 Stunden von uns."
       }
     }
   },
@@ -43,25 +43,25 @@
     "availability": { "value": "24", "unit": "/7", "label": "Immer erreichbar" }
   },
   "features": {
-    "badge": "Anders gebaut",
-    "title": "Kein gewöhnlicher Schadensprozess",
-    "description": "Wir haben die Gepäckschadens-Bearbeitung von Grund auf mit KI neu aufgebaut",
+    "badge": "Warum Passagiere uns wählen",
+    "title": "Der einfachste Teil Ihrer Reise",
+    "description": "Weil ein Gepäckschaden der unkomplizierteste Teil Ihrer Reise sein sollte.",
     "items": {
       "ai": {
-        "title": "Konversations-KI",
-        "description": "Sprechen Sie mit unserem Assistenten wie mit einem Freund. Er versteht den Kontext, stellt kluge Rückfragen und lässt Sie nichts wiederholen."
+        "title": "Einfach erzählen",
+        "description": "Keine Menüs, keine Dropdowns, keine Aktenzeichen. Beschreiben Sie einfach, was passiert ist — und bekommen Sie eine echte Antwort."
       },
       "available": {
-        "title": "Immer erreichbar",
-        "description": "3 Uhr morgens am Flughafen? Kein Problem. Melden Sie Ihren Schaden sofort — unser System schläft nie."
+        "title": "Genau dann, wenn Sie es brauchen",
+        "description": "Mitternachts gelandet? Schaden erst im Hotel bemerkt? Melden Sie Ihren Schaden, wann immer er passiert — nicht nur während der Bürozeiten."
       },
       "fast": {
-        "title": "Blitzschnell",
-        "description": "Die meisten Anträge werden in unter 24 Stunden bearbeitet. Was früher Wochen dauerte, dauert jetzt einen Tag."
+        "title": "Tage statt Wochen",
+        "description": "Herkömmliche Anträge können sich wochenlang hinziehen. Die meisten unserer Fälle sind innerhalb eines Tages gelöst."
       },
       "paperless": {
-        "title": "Null Papierkram",
-        "description": "Alles passiert im Chat. Fotos hochladen, Details bestätigen, Fortschritt verfolgen — alles an einem Ort."
+        "title": "Alles an einem Ort",
+        "description": "Fotos hochladen, Details bestätigen, Status verfolgen — alles in einem Gespräch. Nichts geht verloren."
       }
     }
   },
@@ -76,23 +76,23 @@
       },
       "q2": {
         "question": "Was brauche ich zum Starten?",
-        "answer": "Nur Ihre Buchungsreferenz oder Flugnummer, ein paar Fotos des Schadens und eine kurze Beschreibung. Unser KI-Assistent führt Sie durch alles — es dauert etwa 5 Minuten."
+        "answer": "Nur Ihre Buchungsreferenz oder Flugnummer, ein paar Fotos des Schadens und eine kurze Beschreibung. Wir führen Sie durch alles — in etwa 5 Minuten."
       },
       "q3": {
         "question": "Wie schnell erhalte ich eine Entscheidung?",
-        "answer": "Die meisten Anträge werden innerhalb von 24 Stunden bearbeitet. Sie erhalten Echtzeit-Benachrichtigungen bei jedem Schritt. Wenn wir etwas zusätzlich brauchen, meldet sich unsere KI sofort."
+        "answer": "Die meisten Anträge werden innerhalb von 24 Stunden bearbeitet. Sie erhalten bei jedem Schritt Updates, und falls wir etwas zusätzlich brauchen, melden wir uns sofort — kein Warten ins Blaue."
       },
       "q4": {
         "question": "Wie wird die Entschädigung ausgezahlt?",
-        "answer": "Per Banküberweisung oder als Eurowings-Fluggutschein, je nach Schadensart und Ihrer Präferenz. Unsere KI führt Sie durch die Optionen."
+        "answer": "Per Banküberweisung oder als Eurowings-Fluggutschein, je nach Schadensart und Ihrer Präferenz. Wir führen Sie durch die Optionen."
       },
       "q5": {
         "question": "Kann ich meinen Status jederzeit prüfen?",
-        "answer": "Absolut. Kehren Sie jederzeit zum Chat zurück. Sie erhalten außerdem E-Mail-Updates bei jedem wichtigen Meilenstein."
+        "answer": "Absolut. Kehren Sie jederzeit zum Chat zurück, um den Fortschritt zu prüfen. Sie erhalten außerdem E-Mail-Updates bei jedem wichtigen Meilenstein."
       },
       "q6": {
         "question": "Was, wenn zusätzliche Informationen nötig sind?",
-        "answer": "Sie erhalten sofort eine Benachrichtigung mit einem Link zurück zum Chat. Machen Sie einfach dort weiter — unsere KI erinnert sich an das gesamte Gespräch."
+        "answer": "Sie erhalten eine Benachrichtigung mit einem Link zurück zum Chat. Machen Sie einfach dort weiter — wir erinnern uns an das gesamte Gespräch."
       }
     }
   },
@@ -102,7 +102,7 @@
     "cta": "Schaden melden"
   },
   "footer": {
-    "tagline": "KI-gestützte Gepäckschadens-Bearbeitung — schnell, fair und komplett digital.",
+    "tagline": "Gepäckschäden einfach erledigt — schnell, fair und komplett digital.",
     "legal": "Rechtliches",
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen",

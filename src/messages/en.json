@@ -6,33 +6,33 @@
     "startClaim": "Start Your Claim"
   },
   "hero": {
-    "badge": "The Future of Claims",
+    "badge": "More Ease for Everyone",
     "title": "Your Journey Matters.",
     "titleHighlight": "We Make It Right.",
-    "description": "Something went wrong with your baggage — we get it. Our AI assistant handles everything so you don't have to. No forms. No hold music. Just resolution.",
+    "description": "Damaged baggage shouldn't mean days of emails and hold music. Tell us what happened, and we'll take it from here — fast, fair, and on your terms.",
     "cta": "Start Your Claim",
     "learnMore": "See how it works"
   },
   "howItWorks": {
-    "badge": "Effortless Process",
+    "badge": "Sorted in Minutes",
     "title": "From Damage to Done",
     "description": "Four steps. Five minutes. That's all it takes.",
     "steps": {
       "report": {
         "title": "Tell Us",
-        "description": "Describe what happened — our AI understands natural language, no forms needed"
+        "description": "Tell us what happened — in your own words, no forms to fill out."
       },
       "upload": {
         "title": "Show Us",
-        "description": "Snap a photo of the damage and share your flight details"
+        "description": "Share a photo and your flight details — that's all we need."
       },
       "review": {
         "title": "We Handle It",
-        "description": "Our AI validates, processes, and fast-tracks your claim automatically"
+        "description": "We review everything and fast-track your claim."
       },
       "resolve": {
         "title": "Get Resolved",
-        "description": "Receive your compensation decision — typically within 24 hours"
+        "description": "Get your decision — most passengers hear back within 24 hours."
       }
     }
   },
@@ -43,25 +43,25 @@
     "availability": { "value": "24", "unit": "/7", "label": "Always Available" }
   },
   "features": {
-    "badge": "Built Different",
-    "title": "Not Your Typical Claims Process",
-    "description": "We rebuilt baggage claims from the ground up with AI at the core",
+    "badge": "Why Passengers Choose This",
+    "title": "The Easiest Part of Your Trip",
+    "description": "Because dealing with damaged luggage should be the easiest part of your trip.",
     "items": {
       "ai": {
-        "title": "Conversational AI",
-        "description": "Talk to our assistant like you'd talk to a friend. It understands context, asks smart follow-ups, and never makes you repeat yourself."
+        "title": "Just Talk to Us",
+        "description": "No menus, no dropdowns, no case numbers. Just describe what happened like you'd tell a friend — and get a real answer back."
       },
       "available": {
-        "title": "Always On",
-        "description": "3 AM at the airport? No problem. File your claim the moment it happens — our system never sleeps."
+        "title": "Right When You Need It",
+        "description": "Landed at midnight? Noticed damage at the hotel? Start your claim whenever it happens — not just during office hours."
       },
       "fast": {
-        "title": "Lightning Fast",
-        "description": "Most claims resolved in under 24 hours. What used to take weeks now takes a day."
+        "title": "Days, Not Weeks",
+        "description": "Traditional claims can drag on for weeks. Most of ours are resolved within a day."
       },
       "paperless": {
-        "title": "Zero Paperwork",
-        "description": "Everything happens in chat. Upload photos, confirm details, track progress — all in one place."
+        "title": "Everything in One Place",
+        "description": "Upload photos, confirm details, track your claim status — all from one conversation. Nothing gets lost."
       }
     }
   },
@@ -76,15 +76,15 @@
       },
       "q2": {
         "question": "What do I need to get started?",
-        "answer": "Just your booking reference or flight number, a couple of photos of the damage, and a brief description. Our AI assistant guides you through everything — it takes about 5 minutes."
+        "answer": "Just your booking reference or flight number, a couple of photos of the damage, and a brief description. We'll guide you through everything — it takes about 5 minutes."
       },
       "q3": {
         "question": "How fast will I get a decision?",
-        "answer": "Most claims are resolved within 24 hours. You'll get real-time notifications at every step. If we need anything extra, our AI reaches out immediately — no waiting in limbo."
+        "answer": "Most claims are resolved within 24 hours. You'll get updates at every step, and if we need anything extra, we'll reach out right away — no waiting in limbo."
       },
       "q4": {
         "question": "How is compensation paid out?",
-        "answer": "Via bank transfer or as a Eurowings flight voucher, depending on the damage type and your preference. Our AI will walk you through the options."
+        "answer": "Via bank transfer or as a Eurowings flight voucher, depending on the damage type and your preference. We'll walk you through the options."
       },
       "q5": {
         "question": "Can I check my claim status anytime?",
@@ -92,7 +92,7 @@
       },
       "q6": {
         "question": "What if additional information is needed?",
-        "answer": "You'll get an instant notification with a link back to the chat. Just pick up where you left off — our AI remembers the entire conversation."
+        "answer": "You'll get a notification with a link back to the chat. Just pick up where you left off — we remember the entire conversation."
       }
     }
   },
@@ -102,7 +102,7 @@
     "cta": "Start Your Claim"
   },
   "footer": {
-    "tagline": "AI-powered baggage claims — fast, fair, and fully digital.",
+    "tagline": "Baggage claims made easy — fast, fair, and fully digital.",
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
