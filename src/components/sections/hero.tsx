@@ -134,13 +134,13 @@ export function Hero() {
             className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
           >
             <Button size="lg" className="group w-full sm:w-auto" asChild>
-              <a href="#start-claim" className="gap-2">
+              <a href="#start-claim" className="inline-flex items-center gap-2">
                 {t("cta")}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
             <Button variant="ghost" size="lg" className="w-full sm:w-auto" asChild>
-              <a href="#how-it-works" className="gap-2">
+              <a href="#how-it-works" className="inline-flex items-center gap-2">
                 {t("learnMore")}
                 <motion.span
                   animate={{ y: [0, 4, 0] }}

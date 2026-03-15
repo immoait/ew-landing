@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { EurowingsLogo } from "@/components/eurowings-logo";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -43,9 +44,9 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <EurowingsLogo width={150} height={34} />
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
@@ -72,7 +73,7 @@ export function Header() {
           <button
             className="md:hidden p-3 min-w-[44px] min-h-[44px] flex items-center justify-center text-foreground cursor-pointer"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -80,38 +81,41 @@ export function Header() {
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-white/95 backdrop-blur-xl border-b border-border"
-        >
-          <div className="px-4 py-4 space-y-3">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="block py-2 text-sm font-medium text-foreground/70 hover:text-primary"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
-            <div className="pt-2 flex items-center gap-3">
-              <LanguageSwitcher />
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden bg-white/95 backdrop-blur-xl border-b border-border overflow-hidden"
+          >
+            <div className="px-4 py-4 space-y-3">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="block py-2 text-sm font-medium text-foreground/70 hover:text-primary"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ))}
+              <div className="pt-2 flex items-center gap-3">
+                <LanguageSwitcher />
+              </div>
+              <Button className="w-full" asChild>
+                <a
+                  href="#start-claim"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {t("startClaim")}
+                </a>
+              </Button>
             </div>
-            <Button className="w-full" asChild>
-              <a
-                href="#start-claim"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t("startClaim")}
-              </a>
-            </Button>
-          </div>
-        </motion.div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.header>
   );
 }

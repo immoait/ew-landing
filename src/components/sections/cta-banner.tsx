@@ -10,7 +10,7 @@ export function CTABanner() {
   const t = useTranslations("ctaBanner");
 
   return (
-    <section className="py-20 sm:py-24 md:py-32 relative overflow-hidden">
+    <section id="start-claim" className="py-20 sm:py-24 md:py-32 relative overflow-hidden">
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-accent to-secondary" />
 
@@ -65,7 +65,7 @@ export function CTABanner() {
               className="bg-white text-primary hover:bg-white/90 hover:text-primary-accent shadow-xl group"
               asChild
             >
-              <a href="#start-claim" className="gap-2">
+              <a href="#start-claim" className="inline-flex items-center gap-2">
                 {t("cta")}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
