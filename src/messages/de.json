@@ -1,0 +1,118 @@
+{
+  "header": {
+    "howItWorks": "So funktioniert's",
+    "features": "Vorteile",
+    "faq": "FAQ",
+    "startClaim": "Schaden melden"
+  },
+  "hero": {
+    "badge": "KI-gestützte Schadensbearbeitung",
+    "title": "Gepäck beschädigt?",
+    "titleHighlight": "Wir kümmern uns darum.",
+    "description": "Unser KI-gestützter Assistent bearbeitet Ihren Entschädigungsantrag in unter 24 Stunden — ohne Papierkram, ohne Wartezeit.",
+    "cta": "Schaden jetzt melden",
+    "learnMore": "So funktioniert's"
+  },
+  "howItWorks": {
+    "badge": "Einfacher Prozess",
+    "title": "So funktioniert's",
+    "description": "Melden Sie Ihren Gepäckschaden in vier einfachen Schritten",
+    "steps": {
+      "report": {
+        "title": "Melden",
+        "description": "Erzählen Sie uns, was mit Ihrem Gepäck passiert ist"
+      },
+      "upload": {
+        "title": "Hochladen",
+        "description": "Teilen Sie Fotos und Ihre Flugdaten mit unserem KI-Assistenten"
+      },
+      "review": {
+        "title": "Prüfung",
+        "description": "Wir bearbeiten Ihren Antrag automatisch"
+      },
+      "resolve": {
+        "title": "Ergebnis",
+        "description": "Erhalten Sie Ihre Entscheidung innerhalb von 24 Stunden"
+      }
+    }
+  },
+  "features": {
+    "badge": "Ihre Vorteile",
+    "title": "Ein besseres Schadenerlebnis",
+    "description": "Für Ihren Komfort entwickelt, angetrieben von modernster KI",
+    "items": {
+      "ai": {
+        "title": "KI-gestützter Assistent",
+        "description": "Unser intelligenter Assistent führt Sie durch jeden Schritt und stellt die richtigen Fragen für eine schnelle Bearbeitung."
+      },
+      "available": {
+        "title": "Rund um die Uhr verfügbar",
+        "description": "Melden Sie Ihren Schaden jederzeit und überall. Unser System ist immer für Sie da."
+      },
+      "fast": {
+        "title": "Schnelle Bearbeitung",
+        "description": "Erhalten Sie Ihre Entscheidung innerhalb von 24 Stunden. Kein wochenlanges Warten mehr."
+      },
+      "paperless": {
+        "title": "Komplett papierlos",
+        "description": "Alles wird digital über unsere Chat-Oberfläche abgewickelt. Keine Formulare, keine Dokumente per Post."
+      }
+    }
+  },
+  "faq": {
+    "badge": "Häufige Fragen",
+    "title": "Häufig gestellte Fragen",
+    "description": "Alles, was Sie über unseren Schadensprozess wissen müssen",
+    "items": {
+      "q1": {
+        "question": "Welche Arten von Gepäckschäden sind abgedeckt?",
+        "answer": "Wir decken alle Arten von physischen Schäden an aufgegebenem Gepäck ab, die während Ihres Eurowings-Fluges entstanden sind, einschließlich gebrochener Räder, gerissenem Stoff, beschädigter Griffe, Dellen und Kratzer. Kosmetische Abnutzung durch normalen Gebrauch ist nicht abgedeckt."
+      },
+      "q2": {
+        "question": "Welche Informationen brauche ich für eine Schadensmeldung?",
+        "answer": "Sie benötigen Ihre Buchungsreferenz oder Flugnummer, Fotos des Schadens und eine kurze Beschreibung. Unser KI-Assistent führt Sie genau durch die benötigten Angaben."
+      },
+      "q3": {
+        "question": "Wie lange dauert der Prozess?",
+        "answer": "Die meisten Anträge werden innerhalb von 24 Stunden bearbeitet. Sie erhalten eine Benachrichtigung, sobald eine Entscheidung getroffen wurde. Falls zusätzliche Informationen benötigt werden, meldet sich unser KI-Assistent umgehend bei Ihnen."
+      },
+      "q4": {
+        "question": "Wie erhalte ich meine Entschädigung?",
+        "answer": "Die Entschädigung wird in der Regel per Banküberweisung oder als Gutschein für zukünftige Eurowings-Flüge ausgezahlt, je nach Art und Umfang des Schadens."
+      },
+      "q5": {
+        "question": "Kann ich den Status meiner Schadensmeldung überprüfen?",
+        "answer": "Ja! Sie können Ihren Status jederzeit über die Chat-Oberfläche überprüfen. Außerdem erhalten Sie E-Mail-Benachrichtigungen zu wichtigen Phasen des Prozesses."
+      },
+      "q6": {
+        "question": "Was ist, wenn ich zusätzliche Informationen bereitstellen muss?",
+        "answer": "Wenn unser System weitere Details benötigt, erhalten Sie eine E-Mail-Benachrichtigung mit einem Link, um das Gespräch mit unserem KI-Assistenten fortzusetzen. Klicken Sie einfach auf den Link und geben Sie die angeforderten Informationen an."
+      }
+    }
+  },
+  "ctaBanner": {
+    "title": "Bereit, Ihren Schaden zu melden?",
+    "description": "Durchschnittliche Bearbeitungszeit: unter 24 Stunden",
+    "cta": "Jetzt starten"
+  },
+  "footer": {
+    "tagline": "KI-gestützte Gepäckschadens-Bearbeitung",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "imprint": "Impressum",
+    "copyright": "© {year} Eurowings. Alle Rechte vorbehalten."
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "content": "Diese Seite enthält die vollständige Datenschutzerklärung für den Eurowings Gepäckschaden-Service."
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "content": "Diese Seite enthält die vollständigen Nutzungsbedingungen für den Eurowings Gepäckschaden-Service."
+  },
+  "imprint": {
+    "title": "Impressum",
+    "content": "Diese Seite enthält das Impressum gemäß den Anforderungen des deutschen Rechts."
+  }
+}

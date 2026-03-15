@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a2e;
+  --primary: #8f174f;
+  --primary-accent: #b4175e;
+  --secondary: #089bc9;
+  --secondary-light: #7bcbe2;
+  --muted: #c8c4c3;
+  --muted-foreground: #6b7280;
+  --border: #e5e7eb;
+  --card: #ffffff;
+  --card-foreground: #1a1a2e;
+  --accent: #f3f4f6;
+  --accent-foreground: #1a1a2e;
+  --ring: #8f174f;
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-accent: var(--primary-accent);
+  --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ring: var(--ring);
+  --radius: var(--radius);
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}

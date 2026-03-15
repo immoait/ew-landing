@@ -1,0 +1,118 @@
+{
+  "header": {
+    "howItWorks": "How It Works",
+    "features": "Features",
+    "faq": "FAQ",
+    "startClaim": "Start Your Claim"
+  },
+  "hero": {
+    "badge": "AI-Powered Claims Processing",
+    "title": "Damaged Baggage?",
+    "titleHighlight": "We've Got You Covered.",
+    "description": "Our AI-powered claims assistant processes your compensation request in under 24 hours — no paperwork, no waiting.",
+    "cta": "Start Your Claim Now",
+    "learnMore": "Learn how it works"
+  },
+  "howItWorks": {
+    "badge": "Simple Process",
+    "title": "How It Works",
+    "description": "File your baggage damage claim in four simple steps",
+    "steps": {
+      "report": {
+        "title": "Report",
+        "description": "Tell us what happened to your baggage"
+      },
+      "upload": {
+        "title": "Upload",
+        "description": "Share photos and your flight details with our AI assistant"
+      },
+      "review": {
+        "title": "Review",
+        "description": "We process your claim automatically"
+      },
+      "resolve": {
+        "title": "Resolve",
+        "description": "Get your compensation decision within 24 hours"
+      }
+    }
+  },
+  "features": {
+    "badge": "Why Choose Us",
+    "title": "A Better Claims Experience",
+    "description": "Designed for your convenience, powered by cutting-edge AI",
+    "items": {
+      "ai": {
+        "title": "AI-Powered Assistant",
+        "description": "Our intelligent assistant guides you through every step, asking the right questions to process your claim quickly."
+      },
+      "available": {
+        "title": "Available 24/7",
+        "description": "File your claim anytime, anywhere. Our system never sleeps, so you can get started the moment damage occurs."
+      },
+      "fast": {
+        "title": "Fast Resolution",
+        "description": "Receive your compensation decision within 24 hours. No more waiting weeks for a response."
+      },
+      "paperless": {
+        "title": "Completely Paperless",
+        "description": "Everything is handled digitally through our chat interface. No forms to fill, no documents to mail."
+      }
+    }
+  },
+  "faq": {
+    "badge": "Common Questions",
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about our claims process",
+    "items": {
+      "q1": {
+        "question": "What types of baggage damage are covered?",
+        "answer": "We cover all types of physical damage to checked baggage that occurred during your Eurowings flight, including broken wheels, torn fabric, damaged handles, dents, and scratches. Cosmetic wear and tear from normal use is not covered."
+      },
+      "q2": {
+        "question": "What information do I need to file a claim?",
+        "answer": "You'll need your booking reference or flight number, photos of the damage, and a brief description of what happened. Our AI assistant will guide you through exactly what's needed."
+      },
+      "q3": {
+        "question": "How long does the process take?",
+        "answer": "Most claims are processed within 24 hours. You'll receive a notification once a decision has been made. If additional information is needed, our AI assistant will reach out to you promptly."
+      },
+      "q4": {
+        "question": "How will I receive my compensation?",
+        "answer": "Compensation is typically processed via bank transfer or as a voucher for future Eurowings flights, depending on the nature and extent of the damage."
+      },
+      "q5": {
+        "question": "Can I check the status of my claim?",
+        "answer": "Yes! You can check your claim status at any time by returning to the chat interface. You'll also receive email notifications at key stages of the process."
+      },
+      "q6": {
+        "question": "What if I need to provide additional information?",
+        "answer": "If our system needs more details, you'll receive a notification via email with a link to continue the conversation with our AI assistant. Simply click the link and provide the requested information."
+      }
+    }
+  },
+  "ctaBanner": {
+    "title": "Ready to File Your Claim?",
+    "description": "Average processing time: under 24 hours",
+    "cta": "Start Now"
+  },
+  "footer": {
+    "tagline": "AI-powered baggage claims processing",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "imprint": "Imprint",
+    "copyright": "© {year} Eurowings. All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "content": "This page will contain the full privacy policy for the Eurowings Baggage Claims service."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "content": "This page will contain the full terms of service for the Eurowings Baggage Claims service."
+  },
+  "imprint": {
+    "title": "Imprint",
+    "content": "This page will contain the legal imprint (Impressum) as required by German law."
+  }
+}
