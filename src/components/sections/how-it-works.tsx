@@ -59,7 +59,7 @@ export function HowItWorks() {
               return (
                 <AnimationWrapper key={key} delay={index * 0.15}>
                   <SpotlightCard>
-                    <div className="relative bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-border/50 hover:shadow-lg transition-all duration-500 h-full">
+                    <div className="group relative bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-border/50 hover:shadow-lg transition-all duration-500 h-full">
                       {/* Step number */}
                       <motion.div
                         className="absolute -top-3 -left-1 w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary text-white text-sm font-bold flex items-center justify-center shadow-lg"
