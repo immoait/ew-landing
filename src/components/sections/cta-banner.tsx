@@ -14,11 +14,29 @@ export function CTABanner() {
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-accent to-secondary" />
 
-      {/* Decorative elements */}
+      {/* Animated mesh overlay */}
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%)",
+        }}
+        animate={{
+          background: [
+            "radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%)",
+            "radial-gradient(ellipse at 80% 50%, rgba(255,255,255,0.12) 0%, transparent 50%)",
+            "radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%)",
+          ],
+        }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+      />
+
+      {/* Floating orbs */}
       <motion.div
         className="absolute top-0 right-0 w-96 h-96 rounded-full bg-white/5 blur-3xl"
         animate={{
           scale: [1, 1.3, 1],
+          x: [0, -50, 0],
           opacity: [0.1, 0.2, 0.1],
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
@@ -27,6 +45,7 @@ export function CTABanner() {
         className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-white/5 blur-3xl"
         animate={{
           scale: [1.3, 1, 1.3],
+          x: [0, 40, 0],
           opacity: [0.1, 0.15, 0.1],
         }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -37,16 +56,18 @@ export function CTABanner() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             {t("title")}
           </h2>
-          <p className="mt-4 text-lg text-white/80">{t("description")}</p>
+          <p className="mt-4 text-lg text-white/80 max-w-xl mx-auto">
+            {t("description")}
+          </p>
           <div className="mt-8">
             <Button
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 hover:text-primary-accent shadow-xl"
+              className="bg-white text-primary hover:bg-white/90 hover:text-primary-accent shadow-xl group"
               asChild
             >
               <a href="#start-claim" className="gap-2">
                 {t("cta")}
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
           </div>

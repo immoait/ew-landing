@@ -49,9 +49,20 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-10 pt-6 border-t border-border">
+        <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-muted-foreground">
             {t("copyright", { year: String(year) })}
+          </p>
+          <p className="text-[10px] text-muted-foreground/60 flex items-center gap-1">
+            {t("poweredBy")}{" "}
+            <a
+              href="https://913.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-muted-foreground/80 hover:text-secondary transition-colors"
+            >
+              913.ai
+            </a>
           </p>
         </div>
       </div>
