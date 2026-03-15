@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eurowings Baggage Claims — Landing Page
+
+Modern landing page for the Eurowings AI-powered baggage damage claims system. Passengers are directed here to learn about the claims process and start a claim via the agentic chat interface.
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4 + CSS variables (Eurowings brand tokens)
+- **UI Components**: shadcn-ui pattern (Button, Badge, Accordion)
+- **Animations**: Framer Motion (scroll-triggered reveals, counters, spotlight cards)
+- **i18n**: next-intl — English (default) + German, URL-prefix routing (`/en/`, `/de/`)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── [locale]/
+│   │   ├── layout.tsx          # Locale layout (font, i18n provider)
+│   │   ├── page.tsx            # Landing page (composes all sections)
+│   │   ├── privacy/page.tsx    # Privacy policy (placeholder)
+│   │   ├── terms/page.tsx      # Terms of service (placeholder)
+│   │   └── imprint/page.tsx    # Impressum (placeholder)
+│   ├── layout.tsx              # Root layout (metadata, SEO)
+│   └── globals.css             # Eurowings theme (CSS variables)
+├── components/
+│   ├── ui/                     # Base UI components (button, badge, accordion)
+│   ├── layout/                 # Header, Footer
+│   └── sections/               # Hero, HowItWorks, Stats, Features, FAQ, CTABanner
+├── i18n/                       # next-intl config (routing, navigation, request)
+├── messages/                   # en.json, de.json — all UI copy
+├── lib/utils.ts                # cn() class merge utility
+└── middleware.ts                # Locale routing middleware
+```
 
-## Learn More
+## Eurowings Brand Tokens
 
-To learn more about Next.js, take a look at the following resources:
+| Token              | Color   | Hex       |
+|--------------------|---------|-----------|
+| `primary`          | Disco Red | `#8F174F` |
+| `primary-accent`   | Magenta Daisy | `#B4175E` |
+| `secondary`        | Ocean Wave | `#089BC9` |
+| `secondary-light`  | Journey | `#7BCBE2` |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Production build |
+| `npm run start` | Serve production build |
+| `npm run lint` | Run ESLint |
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Standard Next.js deployment. Compatible with Vercel, AWS Amplify, Docker, or any Node.js hosting.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm run start
+```
+
+## Notes
+
+- **CTA links**: All "Start Your Claim" buttons point to `/#start-claim` (placeholder — replace with the actual agent chat URL when ready)
+- **Legal pages**: Privacy, Terms, and Imprint pages contain placeholder content — replace with real legal copy before launch
+- **No dark mode**: Eurowings brand is light/white-focused by design
