@@ -1,89 +1,109 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { type MotionValue, motion, useScroll, useTransform } from "framer-motion";
 
 export function AirplaneJourney() {
   const { scrollYProgress } = useScroll();
+  const pathRef = useRef<SVGPathElement>(null);
+  const [pathLength, setPathLength] = useState(0);
 
-  // Airplane position along the path
-  const pathProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  useEffect(() => {
+    if (pathRef.current) {
+      setPathLength(pathRef.current.getTotalLength());
+    }
+  }, []);
 
-  // Airplane moves along a curve from top-left to bottom-right
-  const x = useTransform(pathProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], [
-    "5vw", "80vw", "10vw", "70vw", "20vw", "90vw",
-  ]);
-  const y = useTransform(pathProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], [
-    "15vh", "35vh", "50vh", "65vh", "80vh", "95vh",
-  ]);
-  const rotate = useTransform(pathProgress, [0, 0.15, 0.25, 0.35, 0.55, 0.65, 0.75, 0.95], [
-    15, 25, 160, 15, 25, 160, 15, 25,
-  ]);
-  const opacity = useTransform(pathProgress, [0, 0.02, 0.95, 1], [0, 0.6, 0.6, 0]);
+  // Trail draws as user scrolls
+  const trailDashOffset = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [pathLength, 0]
+  );
+
+  // Airplane position along path
+  const progress = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
-      {/* Dotted trail path */}
+    <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden hidden md:block">
       <svg
         className="absolute inset-0 w-full h-full"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
+        viewBox="0 0 1000 3000"
+        preserveAspectRatio="xMidYMid slice"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <motion.path
-          d="M 5,15 Q 50,10 80,35 Q 95,45 10,50 Q -5,55 70,65 Q 95,70 20,80 Q -5,85 90,95"
-          fill="none"
-          stroke="url(#trailGradient)"
-          strokeWidth="0.15"
-          strokeDasharray="0.5 0.8"
-          style={{
-            pathLength: pathProgress,
-          }}
-        />
         <defs>
           <linearGradient id="trailGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#089BC9" stopOpacity="0.3" />
-            <stop offset="50%" stopColor="#8F174F" stopOpacity="0.2" />
+            <stop offset="0%" stopColor="#089BC9" stopOpacity="0.25" />
+            <stop offset="50%" stopColor="#8F174F" stopOpacity="0.15" />
             <stop offset="100%" stopColor="#089BC9" stopOpacity="0.1" />
           </linearGradient>
         </defs>
-      </svg>
 
-      {/* Airplane */}
-      <motion.div
-        className="absolute"
-        style={{
-          left: x,
-          top: y,
-          rotate,
-          opacity,
-        }}
-      >
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
+        {/* Trail path — dotted, draws on scroll */}
+        <motion.path
+          ref={pathRef}
+          d="M 900,100 Q 500,300 150,600 Q -50,800 400,1000 Q 850,1200 700,1500 Q 550,1700 200,1800 Q -50,1900 500,2100 Q 900,2300 600,2600 Q 400,2800 800,3000"
           fill="none"
-          className="drop-shadow-lg"
-        >
-          <path
-            d="M21.71 10.29L14 2.59a1 1 0 00-1.42 0l-7.29 7.3a1 1 0 000 1.41l7.71 7.71a1 1 0 001.41 0l7.3-7.3a1 1 0 000-1.42z"
-            fill="none"
-          />
-          {/* Simplified airplane silhouette */}
-          <path
-            d="M22 2L13.5 22l-2-8.5L3 11.5 22 2z"
-            fill="#089BC9"
-            opacity="0.8"
-          />
-          <path
-            d="M22 2L11.5 13.5"
-            stroke="#8F174F"
-            strokeWidth="1"
-            opacity="0.6"
-          />
-        </svg>
-        {/* Glow effect behind airplane */}
-        <div className="absolute inset-0 -m-4 bg-secondary/20 rounded-full blur-xl" />
-      </motion.div>
+          stroke="url(#trailGradient)"
+          strokeWidth="2"
+          strokeDasharray="8 12"
+          style={{
+            strokeDashoffset: trailDashOffset,
+          }}
+        />
+
+        {/* Airplane — moves along the same path */}
+        <PlaneOnPath progress={progress} pathRef={pathRef} />
+      </svg>
     </div>
+  );
+}
+
+function PlaneOnPath({
+  progress,
+  pathRef,
+}: {
+  progress: MotionValue<number>;
+  pathRef: React.RefObject<SVGPathElement | null>;
+}) {
+  const [pos, setPos] = useState({ x: 900, y: 100, angle: 0 });
+
+  useEffect(() => {
+    const unsubscribe = progress.on("change", (v) => {
+      if (!pathRef.current) return;
+      const len = pathRef.current.getTotalLength();
+      const point = pathRef.current.getPointAtLength(v * len);
+      const nextPoint = pathRef.current.getPointAtLength(
+        Math.min(v * len + 2, len)
+      );
+      const angle =
+        Math.atan2(nextPoint.y - point.y, nextPoint.x - point.x) *
+        (180 / Math.PI);
+      setPos({ x: point.x, y: point.y, angle });
+    });
+    return unsubscribe;
+  }, [progress, pathRef]);
+
+  return (
+    <g
+      transform={`translate(${pos.x}, ${pos.y}) rotate(${pos.angle})`}
+      opacity="0.7"
+    >
+      {/* Glow */}
+      <circle r="20" fill="#089BC9" opacity="0.08" />
+      {/* Airplane pointing right by default */}
+      <path
+        d="M 12 0 L -6 -5 L -4 0 L -6 5 Z"
+        fill="#089BC9"
+      />
+      <path
+        d="M -2 -8 L 4 0 L -2 8"
+        fill="none"
+        stroke="#089BC9"
+        strokeWidth="1"
+        opacity="0.4"
+      />
+    </g>
   );
 }
