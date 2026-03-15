@@ -53,7 +53,7 @@ export function Footer() {
           <p className="text-xs text-muted-foreground">
             {t("copyright", { year: String(year) })}
           </p>
-          <p className="text-[10px] text-muted-foreground/60 flex items-center gap-1">
+          <p className="text-xs text-muted-foreground/60 flex items-center gap-1">
             {t("poweredBy")}{" "}
             <a
               href="https://913.ai"

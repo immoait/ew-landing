@@ -16,27 +16,27 @@ export function FAQ() {
   const t = useTranslations("faq");
 
   return (
-    <section id="faq" className="py-24 sm:py-32 bg-accent/30">
+    <section id="faq" className="py-20 sm:py-24 md:py-32 bg-accent/30">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <AnimationWrapper className="text-center mb-12">
+        <AnimationWrapper className="text-center mb-10 sm:mb-12">
           <Badge className="mb-4">{t("badge")}</Badge>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
             {t("title")}
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-muted-foreground">
             {t("description")}
           </p>
         </AnimationWrapper>
 
         <AnimationWrapper delay={0.2}>
-          <div className="bg-white rounded-2xl border border-border/50 shadow-sm p-6 sm:p-8">
+          <div className="bg-white rounded-2xl border border-border/50 shadow-sm p-4 sm:p-6 md:p-8">
             <Accordion type="single" collapsible className="w-full">
               {faqKeys.map((key) => (
                 <AccordionItem key={key} value={key}>
-                  <AccordionTrigger className="text-left text-base">
+                  <AccordionTrigger className="text-left text-sm sm:text-base">
                     {t(`items.${key}.question`)}
                   </AccordionTrigger>
-                  <AccordionContent className="text-base leading-relaxed">
+                  <AccordionContent className="text-sm sm:text-base leading-relaxed">
                     {t(`items.${key}.answer`)}
                   </AccordionContent>
                 </AccordionItem>

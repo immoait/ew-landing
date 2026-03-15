@@ -7,24 +7,22 @@ interface TextRevealProps {
   text: string;
   className?: string;
   delay?: number;
-  as?: "h1" | "h2" | "h3" | "p" | "span";
 }
 
 export function TextReveal({
   text,
   className = "",
   delay = 0,
-  as: Tag = "span",
 }: TextRevealProps) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   const words = text.split(" ");
 
   return (
-    <Tag ref={ref as React.RefObject<HTMLHeadingElement>} className={className}>
+    <span ref={ref} className={className}>
       {words.map((word, wordIndex) => (
-        <span key={wordIndex} className="inline-block overflow-hidden mr-[0.3em]">
+        <span key={wordIndex} className="inline-block overflow-hidden" style={{ marginRight: "0.3em" }}>
           <motion.span
             className="inline-block"
             initial={{ y: "100%", opacity: 0 }}
@@ -43,6 +41,6 @@ export function TextReveal({
           </motion.span>
         </span>
       ))}
-    </Tag>
+    </span>
   );
 }

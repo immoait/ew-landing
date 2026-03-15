@@ -10,7 +10,7 @@ export function CTABanner() {
   const t = useTranslations("ctaBanner");
 
   return (
-    <section className="py-24 sm:py-32 relative overflow-hidden">
+    <section className="py-20 sm:py-24 md:py-32 relative overflow-hidden">
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-accent to-secondary" />
 
@@ -53,10 +53,10 @@ export function CTABanner() {
 
       <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <AnimationWrapper>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
             {t("title")}
           </h2>
-          <p className="mt-4 text-lg text-white/80 max-w-xl mx-auto">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-white/80 max-w-xl mx-auto">
             {t("description")}
           </p>
           <div className="mt-8">

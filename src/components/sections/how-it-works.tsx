@@ -27,15 +27,15 @@ export function HowItWorks() {
     <section
       id="how-it-works"
       ref={sectionRef}
-      className="py-24 sm:py-32 bg-accent/30 relative overflow-hidden"
+      className="py-20 sm:py-24 md:py-32 bg-accent/30 relative overflow-hidden"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <AnimationWrapper className="text-center mb-16">
+        <AnimationWrapper className="text-center mb-12 sm:mb-16">
           <Badge className="mb-4">{t("badge")}</Badge>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
             {t("title")}
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             {t("description")}
           </p>
         </AnimationWrapper>
@@ -59,7 +59,7 @@ export function HowItWorks() {
               return (
                 <AnimationWrapper key={key} delay={index * 0.15}>
                   <SpotlightCard>
-                    <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-border/50 hover:shadow-lg transition-all duration-500 h-full">
+                    <div className="relative bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-border/50 hover:shadow-lg transition-all duration-500 h-full">
                       {/* Step number */}
                       <motion.div
                         className="absolute -top-3 -left-1 w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary text-white text-sm font-bold flex items-center justify-center shadow-lg"

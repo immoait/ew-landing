@@ -16,9 +16,9 @@ export function Hero() {
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-secondary-light/5" />
 
-        {/* Multiple morphing gradient blobs */}
+        {/* Multiple morphing gradient blobs — responsive sizes */}
         <motion.div
-          className="absolute top-[10%] right-[10%] w-[600px] h-[600px] rounded-full"
+          className="absolute top-[10%] right-[10%] w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] rounded-full"
           style={{
             background:
               "radial-gradient(circle, rgba(8,155,201,0.12) 0%, rgba(123,203,226,0.08) 40%, transparent 70%)",
@@ -31,7 +31,7 @@ export function Hero() {
           transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute top-[30%] left-[5%] w-[500px] h-[500px] rounded-full"
+          className="absolute top-[30%] left-[5%] w-[200px] h-[200px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] rounded-full"
           style={{
             background:
               "radial-gradient(circle, rgba(143,23,79,0.08) 0%, rgba(180,23,94,0.05) 40%, transparent 70%)",
@@ -44,7 +44,7 @@ export function Hero() {
           transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute bottom-[10%] right-[30%] w-[400px] h-[400px] rounded-full"
+          className="absolute bottom-[10%] right-[30%] w-[180px] h-[180px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] rounded-full"
           style={{
             background:
               "radial-gradient(circle, rgba(8,155,201,0.06) 0%, rgba(143,23,79,0.04) 50%, transparent 70%)",
@@ -58,7 +58,7 @@ export function Hero() {
         />
         {/* Fourth blob for more depth */}
         <motion.div
-          className="absolute top-[60%] left-[40%] w-[300px] h-[300px] rounded-full"
+          className="absolute top-[60%] left-[40%] w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-[300px] rounded-full"
           style={{
             background:
               "radial-gradient(circle, rgba(123,203,226,0.1) 0%, transparent 60%)",
@@ -97,13 +97,13 @@ export function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Badge variant="secondary" className="mb-8 text-sm px-4 py-1.5">
+            <Badge variant="secondary" className="mb-8 text-xs sm:text-sm px-3 sm:px-4 py-1.5">
               {t("badge")}
             </Badge>
           </motion.div>
 
           {/* Word-by-word headline reveal */}
-          <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
+          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
             <TextReveal
               text={t("title")}
               className="text-foreground block"
@@ -121,7 +121,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
-            className="mt-8 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+            className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
             {t("description")}
           </motion.p>
@@ -131,15 +131,15 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}
-            className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
           >
-            <Button size="lg" className="group" asChild>
+            <Button size="lg" className="group w-full sm:w-auto" asChild>
               <a href="#start-claim" className="gap-2">
                 {t("cta")}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
-            <Button variant="ghost" size="lg" asChild>
+            <Button variant="ghost" size="lg" className="w-full sm:w-auto" asChild>
               <a href="#how-it-works" className="gap-2">
                 {t("learnMore")}
                 <motion.span

@@ -51,12 +51,12 @@ export function Stats() {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
-    <section ref={sectionRef} className="py-16 sm:py-20 relative overflow-hidden">
+    <section ref={sectionRef} className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
       {/* Subtle gradient line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
           {statKeys.map((key, index) => {
             const Icon = statIcons[index];
             const value = parseInt(t(`${key}.value`));
@@ -72,10 +72,10 @@ export function Stats() {
                   ease: [0.21, 0.47, 0.32, 0.98],
                 }}
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-5 h-5 text-secondary" />
+                <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-secondary" />
                 </div>
-                <div className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground">
                   <AnimatedNumber
                     value={value}
                     delay={index * 0.15 + 0.3}
@@ -83,7 +83,7 @@ export function Stats() {
                   />
                   <span className="text-primary">{t(`${key}.unit`)}</span>
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground font-medium">
+                <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-muted-foreground font-medium">
                   {t(`${key}.label`)}
                 </p>
               </motion.div>
