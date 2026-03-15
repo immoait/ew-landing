@@ -6,10 +6,12 @@ import { Features } from "@/components/sections/features";
 import { FAQ } from "@/components/sections/faq";
 import { CTABanner } from "@/components/sections/cta-banner";
 import { Footer } from "@/components/layout/footer";
+import { ScrollToTop } from "@/components/scroll-to-top";
 
 export default function Home() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <main>
         <Hero />

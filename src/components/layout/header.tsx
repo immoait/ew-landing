@@ -24,9 +24,9 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { href: "#how-it-works", label: t("howItWorks") },
-    { href: "#features", label: t("features") },
-    { href: "#faq", label: t("faq") },
+    { href: "/#how-it-works", label: t("howItWorks") },
+    { href: "/#features", label: t("features") },
+    { href: "/#faq", label: t("faq") },
   ];
 
   return (
@@ -65,7 +65,7 @@ export function Header() {
           <div className="hidden md:flex items-center gap-4">
             <LanguageSwitcher />
             <Button asChild size="sm">
-              <a href="#start-claim">{t("startClaim")}</a>
+              <a href="/#start-claim">{t("startClaim")}</a>
             </Button>
           </div>
 
@@ -106,7 +106,7 @@ export function Header() {
               </div>
               <Button className="w-full" asChild>
                 <a
-                  href="#start-claim"
+                  href="/#start-claim"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {t("startClaim")}
