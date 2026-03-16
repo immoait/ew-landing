@@ -57,8 +57,8 @@ export function HowItWorks() {
             {stepKeys.map((key, index) => {
               const Icon = stepIcons[index];
               return (
-                <AnimationWrapper key={key} delay={index * 0.15}>
-                  <SpotlightCard>
+                <AnimationWrapper key={key} delay={index * 0.15} className="h-full">
+                  <SpotlightCard className="h-full">
                     <div className="group relative bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-border/50 hover:shadow-lg transition-all duration-500 h-full">
                       {/* Step number */}
                       <motion.div
