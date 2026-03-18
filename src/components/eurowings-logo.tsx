@@ -14,7 +14,7 @@ export function EurowingsLogo({
 }: EurowingsLogoProps) {
   return (
     <Image
-      src="/eurowings-logo.svg"
+      src="/Eurowings_Logo.png"
       alt="Eurowings"
       width={width}
       height={height}
