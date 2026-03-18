@@ -1,31 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" fill="none">
-  <!-- Wing emblem (three feather/leaf shapes) positioned top-right -->
-  <!-- Bottom magenta feather -->
-  <path d="M588 60 Q592 54 640 88 Q644 92 640 96 Q636 100 588 66 Q584 62 588 60Z" fill="#8B154E"/>
-  <!-- Second magenta feather (above) -->
-  <path d="M600 44 Q604 38 652 72 Q656 76 652 80 Q648 84 600 50 Q596 46 600 44Z" fill="#8B154E"/>
-  <!-- Grey feather -->
-  <path d="M612 30 Q616 24 664 58 Q668 62 664 66 Q660 70 612 36 Q608 32 612 30Z" fill="#A8A9AD"/>
-  <!-- Top cyan feather -->
-  <path d="M624 16 Q628 10 676 44 Q680 48 676 52 Q672 56 624 22 Q620 18 624 16Z" fill="#00BFEC"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 100" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&amp;display=swap');
+    </style>
+  </defs>
 
-  <!-- Wordmark "Eurowings" -->
-  <!-- E -->
-  <path d="M30 56 L30 156 L88 156 L88 140 L52 140 L52 114 L84 114 L84 98 L52 98 L52 72 L88 72 L88 56Z" fill="#8B154E"/>
-  <!-- u -->
-  <path d="M104 84 L104 132 C104 148 116 160 136 160 C156 160 168 148 168 132 L168 84 L150 84 L150 130 C150 138 144 144 136 144 C128 144 122 138 122 130 L122 84Z" fill="#8B154E"/>
-  <!-- r -->
-  <path d="M184 84 L184 156 L202 156 L202 112 C202 100 210 92 222 92 L228 92 L228 82 C216 82 208 88 202 96 L202 84Z" fill="#8B154E"/>
-  <!-- o -->
-  <path d="M268 80 C246 80 232 96 232 120 C232 144 246 160 268 160 C290 160 304 144 304 120 C304 96 290 80 268 80Z M268 95 C280 95 288 104 288 120 C288 136 280 145 268 145 C256 145 248 136 248 120 C248 104 256 95 268 95Z" fill="#8B154E"/>
-  <!-- w -->
-  <path d="M310 84 L330 156 L348 156 L362 108 L376 156 L394 156 L414 84 L396 84 L384 136 L370 84 L354 84 L340 136 L328 84Z" fill="#8B154E"/>
-  <!-- i -->
-  <path d="M424 56 L424 72 L442 72 L442 56Z M424 84 L424 156 L442 156 L442 84Z" fill="#8B154E"/>
-  <!-- n -->
-  <path d="M460 84 L460 156 L478 156 L478 112 C478 100 486 94 496 94 C506 94 512 100 512 112 L512 156 L530 156 L530 108 C530 92 518 80 502 80 C492 80 484 86 478 92 L478 84Z" fill="#8B154E"/>
-  <!-- g -->
-  <path d="M570 80 C556 80 546 88 542 96 L542 84 L560 84 C560 84 560 84 542 84 L542 156 L542 172 C542 186 554 194 574 194 C586 194 596 190 600 188 L600 174 C596 176 588 178 580 178 C570 178 562 174 562 166 L562 154 C566 158 574 160 582 160 C602 160 618 146 618 120 C618 96 604 80 584 80Z M580 95 C592 95 600 104 600 120 C600 136 592 145 580 145 C568 145 560 136 560 120 C560 104 568 95 580 95Z" fill="#8B154E"/>
-  <!-- s -->
-  <path d="M648 80 C634 80 624 90 624 102 C624 116 636 122 650 126 C660 128 666 132 666 138 C666 144 660 148 652 148 C642 148 634 144 630 140 L620 152 C628 158 638 162 652 162 C670 162 682 152 682 140 C682 126 670 120 656 116 C648 114 642 110 642 104 C642 98 648 94 654 94 C662 94 668 96 672 100 L682 88 C676 82 666 80 656 80Z" fill="#8B154E"/>
+  <!-- Wordmark -->
+  <text
+    x="0"
+    y="82"
+    fill="#8B154E"
+    font-family="'Source Sans 3', 'Source Sans Pro', Arial, Helvetica, sans-serif"
+    font-weight="700"
+    font-size="76"
+    letter-spacing="-1.5"
+  >Eurowings</text>
+
+  <!-- Wing emblem — four overlapping leaf shapes at ~40° angle -->
+  <!-- Positioned above the "gs" letters -->
+
+  <!-- Bottom magenta feather (largest, rightmost) -->
+  <path d="M370 38 C372 35 374 33 377 32 L412 54 C414 56 414 58 412 60 L408 62 C406 64 404 64 401 62 L370 42 C368 40 368 39 370 38Z" fill="#8B154E"/>
+
+  <!-- Second magenta feather -->
+  <path d="M378 28 C380 25 382 23 385 22 L420 44 C422 46 422 48 420 50 L416 52 C414 54 412 54 409 52 L378 32 C376 30 376 29 378 28Z" fill="#8B154E"/>
+
+  <!-- Grey/silver feather -->
+  <path d="M386 18 C388 15 390 13 393 12 L428 34 C430 36 430 38 428 40 L424 42 C422 44 420 44 417 42 L386 22 C384 20 384 19 386 18Z" fill="#A8A9AD"/>
+
+  <!-- Top cyan feather (smallest, leftmost at top) -->
+  <path d="M394 8 C396 5 398 3 401 2 L436 24 C438 26 438 28 436 30 L432 32 C430 34 428 34 425 32 L394 12 C392 10 392 9 394 8Z" fill="#00B5E2"/>
 </svg>
