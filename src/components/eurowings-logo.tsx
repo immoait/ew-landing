@@ -10,7 +10,7 @@ interface EurowingsLogoProps {
 export function EurowingsLogo({
   className,
   width = 180,
-  height = 40,
+  height = 52,
 }: EurowingsLogoProps) {
   return (
     <Image
@@ -19,6 +19,7 @@ export function EurowingsLogo({
       width={width}
       height={height}
       className={className}
+      unoptimized
       priority
     />
   );
