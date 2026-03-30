@@ -65,7 +65,7 @@ export function CTABanner() {
               className="bg-white text-primary hover:bg-white/90 hover:text-primary-accent shadow-xl group"
               asChild
             >
-              <a href="#start-claim" className="inline-flex items-center gap-2">
+              <a href="https://embed-app-eurowings-813672933176.europe-west3.run.app/" className="inline-flex items-center gap-2">
                 {t("cta")}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>

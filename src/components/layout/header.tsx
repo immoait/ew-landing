@@ -65,7 +65,7 @@ export function Header() {
           <div className="hidden md:flex items-center gap-4">
             <LanguageSwitcher />
             <Button asChild size="sm">
-              <a href="/#start-claim">{t("startClaim")}</a>
+              <a href="https://embed-app-eurowings-813672933176.europe-west3.run.app/">{t("startClaim")}</a>
             </Button>
           </div>
 
@@ -106,7 +106,7 @@ export function Header() {
               </div>
               <Button className="w-full" asChild>
                 <a
-                  href="/#start-claim"
+                  href="https://embed-app-eurowings-813672933176.europe-west3.run.app/"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {t("startClaim")}
