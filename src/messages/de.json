@@ -11,7 +11,21 @@
     "titleHighlight": "Wir machen es gut.",
     "description": "Beschädigtes Gepäck sollte nicht tagelange E-Mails und Warteschleifen bedeuten. Sagen Sie uns, was passiert ist — wir kümmern uns drum. Schnell, fair und unkompliziert.",
     "cta": "Schaden melden",
-    "learnMore": "So funktioniert's"
+    "learnMore": "So funktioniert's",
+    "primaryBox": {
+      "eyebrow": "Schaden melden",
+      "title": "Direkt mit Rose sprechen",
+      "description": "Rose ist unser KI-Agent für Gepäckschäden. Erzählen Sie in eigenen Worten, was passiert ist, laden Sie ein Foto hoch — und Rose kümmert sich um den Rest. Kein Formular, keine Warteschleife, keine Aktenzeichen.",
+      "cta": "Jetzt Schaden melden",
+      "note": "Dauert etwa 5 Minuten · Antwort meist innerhalb von 24 Stunden"
+    },
+    "secondaryBox": {
+      "eyebrow": "Mehr erfahren",
+      "title": "Erst verstehen, dann starten",
+      "description": "Sie möchten wissen, was Sie erwartet, bevor Sie loslegen? Vier einfache Schritte, typische Bearbeitungszeiten und Antworten auf die häufigsten Fragen — alles auf einen Blick.",
+      "cta": "So funktioniert's",
+      "note": "Keine Anmeldung nötig · In 2 Minuten erklärt"
+    }
   },
   "howItWorks": {
     "badge": "In Minuten erledigt",
