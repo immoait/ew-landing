@@ -143,12 +143,12 @@ export function Hero() {
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-foreground mb-2">
                 {t("primaryBox.title")}
               </h3>
-              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 {t("primaryBox.description")}
               </p>
 
-              {/* CTA in the middle */}
-              <div className="flex justify-center">
+              {/* CTA + note pinned to the bottom */}
+              <div className="mt-auto pt-5">
                 <Button size="lg" className="group/btn w-full" asChild>
                   <a
                     href="https://embed-app-eurowings-823415516695.europe-west3.run.app/"
@@ -158,12 +158,10 @@ export function Hero() {
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                   </a>
                 </Button>
+                <p className="pt-3 text-xs text-muted-foreground/80 text-center">
+                  {t("primaryBox.note")}
+                </p>
               </div>
-
-              {/* Reassurance note */}
-              <p className="mt-auto pt-4 text-xs text-muted-foreground/80 text-center">
-                {t("primaryBox.note")}
-              </p>
             </div>
           </SpotlightCard>
 
@@ -182,12 +180,12 @@ export function Hero() {
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-foreground mb-2">
                 {t("secondaryBox.title")}
               </h3>
-              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 {t("secondaryBox.description")}
               </p>
 
-              {/* CTA in the middle */}
-              <div className="flex justify-center">
+              {/* CTA + note pinned to the bottom */}
+              <div className="mt-auto pt-5">
                 <Button
                   size="lg"
                   variant="outline"
@@ -199,12 +197,10 @@ export function Hero() {
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                   </a>
                 </Button>
+                <p className="pt-3 text-xs text-muted-foreground/80 text-center">
+                  {t("secondaryBox.note")}
+                </p>
               </div>
-
-              {/* Reassurance note */}
-              <p className="mt-auto pt-4 text-xs text-muted-foreground/80 text-center">
-                {t("secondaryBox.note")}
-              </p>
             </div>
           </SpotlightCard>
         </motion.div>
