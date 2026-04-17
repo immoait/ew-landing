@@ -14,17 +14,17 @@
     "learnMore": "See how it works",
     "primaryBox": {
       "eyebrow": "Start a claim",
-      "title": "Talk to Rose directly",
-      "description": "Rose is our AI agent for baggage damage. Tell her what happened in your own words, upload a photo — and she'll take care of the rest. No forms, no hold music, no case numbers.",
-      "cta": "Start your claim",
-      "note": "Takes about 5 minutes · Most answers within 24 hours"
+      "title": "Start with Rose",
+      "description": "Tell Rose what happened. No forms, no hold music.",
+      "cta": "Click here",
+      "note": "About 5 minutes"
     },
     "secondaryBox": {
-      "eyebrow": "Learn more",
-      "title": "Understand first, start after",
-      "description": "Want to know what to expect before you begin? Four simple steps, typical turnaround times, and answers to the most common questions — all at a glance.",
-      "cta": "See how it works",
-      "note": "No sign-up needed · 2-minute overview"
+      "eyebrow": "More info",
+      "title": "Get informed first",
+      "description": "How does it work? What do I need?",
+      "cta": "Learn more",
+      "note": "2-minute overview"
     }
   },
   "howItWorks": {
